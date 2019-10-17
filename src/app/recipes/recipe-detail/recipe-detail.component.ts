@@ -20,6 +20,7 @@ export class RecipeDetailComponent implements OnInit {
     this.route.params.subscribe(
       (params: Params) => {
         this.id = +params['id'];
+        //TO-DO: Check if the id is greater then recipes array length in the recipes service. if so, redirect to recipes
         this.recipe = this.recipeService.getRecipe(this.id);
       }
     );
@@ -32,6 +33,12 @@ export class RecipeDetailComponent implements OnInit {
   onEditRecipe(){
     this.router.navigate(['edit'], {relativeTo: this.route});
     // this.router.navigate(['../', this.id, 'edit'], {relativeTo: this.route}); //Simply done for demo purpose..the line above is a much better approach
+  }
+
+  onDeleteRecipe(){
+    this.recipeService.deleteRecipe(this.id);
+    console.log(this.route);
+    this.router.navigate(['../'], {relativeTo: this.route});
   }
 
 }
