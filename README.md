@@ -13,11 +13,13 @@
 - Send recipe ingredients to shopping list
 - Edit recipe details
 - Delete recipe
+
 ![ManageRecipe](https://user-images.githubusercontent.com/12692788/67635177-7e731980-f8cc-11e9-9df9-d80a57e14d61.jpg)
 
 ## Manage Recipes Screen
 - Saving recipes to database
 - Fetching saved recipes from the database
+
 ![ManageRecipes](https://user-images.githubusercontent.com/12692788/67635185-a6627d00-f8cc-11e9-909f-fc87c8a6ea8f.jpg)
 
 ## Manage Shopping List
